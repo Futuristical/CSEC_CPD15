@@ -1,0 +1,8 @@
+n = int(input())
+b = [tuple(map(int, input().split(" "))) for _ in range(n)]
+c = 0
+for i in range(n):
+    for j in range(n):
+        if i != j and b[i][0] == b[j][1]:
+            c += 1
+print(c)
